@@ -1,6 +1,6 @@
 {
   "name": "cocktailsort",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Cocktail Sort (bidirectional bubble sort)",
   "main": "dist/index.js",
   "keywords": [

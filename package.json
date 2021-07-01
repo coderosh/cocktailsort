@@ -1,6 +1,6 @@
 {
   "name": "cocktailsort",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Cocktail Sort (bidirectional bubble sort)",
   "main": "dist/index.js",
   "keywords": [
@@ -19,6 +19,7 @@
     "cb": "yarn clean && yarn build",
     "prepublishOnly": "yarn lint && yarn test && yarn build"
   },
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "@types/node": "^15.12.4",

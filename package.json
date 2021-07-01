@@ -1,8 +1,15 @@
 {
   "name": "cocktailsort",
   "version": "1.0.0",
-  "description": "Cocktail Sort",
+  "description": "Cocktail Sort (bidirectional bubble sort)",
   "main": "dist/index.js",
+  "keywords": [
+    "sort",
+    "cocktail sort",
+    "cocktailsort",
+    "shaker sort",
+    "shakersort"
+  ],
   "scripts": {
     "watch": "tsc -w",
     "build": "tsc",

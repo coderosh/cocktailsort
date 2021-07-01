@@ -7,7 +7,7 @@ const fn = (a: any, b: any) => a - b
  * @param arr - Input Array
  * @param cmpFn  - Compare Function
  */
-function sort(arr: any[], cmpFn = fn) {
+function sort<T = any>(arr: T[], cmpFn: (a: T, b: T) => number = fn) {
   let swapped = true
   let begin = 0
   let end = arr.length

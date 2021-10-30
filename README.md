@@ -19,8 +19,7 @@ yarn add cocktailsort
 ## Usage
 
 ```js
-const sort = require('cocktailsort')
-// OR import sort from 'cocktailsort'
+import sort from 'cocktailsort'
 
 // ascending
 sort([4, 2, 0, -1, 9]) // [-1, 0, 2, 4, 9]

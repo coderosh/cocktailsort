@@ -2,6 +2,12 @@
 
 const fn = (a: any, b: any) => a - b
 
+const swap = (arr: any[], i: number, j: number) => {
+  const temp = arr[i]
+  arr[i] = arr[j]
+  arr[j] = temp
+}
+
 /**
  * Cocktail sort
  * @param arr - Input Array
@@ -16,7 +22,7 @@ function sort<T = any>(arr: T[], cmpFn: (a: T, b: T) => number = fn) {
     swapped = false
     for (let i = begin; i < end - 1; ++i) {
       if (cmpFn(arr[i], arr[i + 1]) > 0) {
-        ;[arr[i + 1], arr[i]] = [arr[i], arr[i + 1]]
+        swap(arr, i, i + 1)
         swapped = true
       }
     }
@@ -28,7 +34,7 @@ function sort<T = any>(arr: T[], cmpFn: (a: T, b: T) => number = fn) {
 
     for (let i = end - 1; i >= begin; i--) {
       if (cmpFn(arr[i], arr[i + 1]) > 0) {
-        ;[arr[i + 1], arr[i]] = [arr[i], arr[i + 1]]
+        swap(arr, i, i + 1)
         swapped = true
       }
     }
@@ -39,4 +45,4 @@ function sort<T = any>(arr: T[], cmpFn: (a: T, b: T) => number = fn) {
   return arr
 }
 
-export = sort
+export default sort
